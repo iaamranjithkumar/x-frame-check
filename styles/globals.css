@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+html{
+    height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: Comfortaa,cursive;
+  height: 100%;
+}
+#__next{
+  height: 100%;
+}
+h2 {
+  color: #152780;
+}
+
+.transaction {
+  text-align: center;  
+}
+
+input[type="date"] {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+}
+
+.transaction-summary {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+.transaction-data p{
+  color: white;
+  margin-bottom: 5px;
+}
+
+.transaction-summary p{
+  color:#f5c81f;
+  font-size: 20px;
+}
+
+.transaction-container {
+  background-color: #fff;
+  box-shadow: 6px 6px 21px 1px #00000036;
+  font-size: 12px;
+}
+
+.transaction-data{
+  margin: 0 auto;
+}
+ 
+.total{
+  clear: both;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.total:first-child{
+  padding: 0px 0px 5px 0px;
+}
+.total span{
+  float: left;
+  width: 200px;
+}
+
+.total:first-child .total-key, .total:first-child .total-count, .total:first-child .total-rand, .total:first-child .total-usd {
+  background: #82b440;
+  color: #fff;
+}
+
+
+.transaction-details-table{
+  clear: both;
+}
+.transaction-details-table p{
+  color: #f5c81f;
+  font-size: 24px;
+}
+.filters{
+  margin-bottom: 25px;
+}
+.filters label{
+  color: white;
+  font-size: 12px;
+}
+.filters select {
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+.filters button {
+  font-family: 'Comfortaa', cursive; 
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 6px;  
+  padding: 1em 3em;
+  background-size: 200% auto;
+  color: white;
+  border: 1px solid #fff;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background-image: linear-gradient(to right, #5c61f2 0%, #99c8f8 50%, #5c61f2 100%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+  
+.filters button:hover {
+  background-position: right center;
+}
+  
+
+.result{
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+.filters span label{
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.filters a{
+  margin-left: 20px;
+}
+.login {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+  font-family: 'Comfortaa', cursive;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #009B77;
+  border-radius: 10px;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+
+.form input {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Comfortaa', cursive;
+}
+
+.form input:focus {
+  background: #dbdbdb;
+}
+
+.form button,.recon-select-form button, .recon-csv-download button, .transation-csv-download button{
+  font-family: 'Comfortaa', cursive;
+  width: 100%;  
+  text-align: center;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1em!important;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 6px;  
+  padding: 1em 3em;
+  background-size: 200% auto;
+  color: white;
+  border: none;
+  width: 280px;
+  -webkit-box-shadow: 0 2px 0 #6f9a37;
+  box-shadow: 0 2px 0 #6f9a37;
+  background: #82b440;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.form button:hover {
+  background-position: right center;
+}
+
+.form button:active {
+  background: #395591;
+}
+
+.login-text{
+  font-size: 60px;
+  color: white;
+  margin-bottom: 10px;
+  font-family: cursive;
+}
+
+
+.pagination-bottom {
+  position: inherit;
+  bottom: 0;
+  display: flex;
+  background-color: #3db58c;
+  width: 100%;
+}
+
+.ReactTable .-pagination {
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.ReactTable .rt-tbody {
+  background-color: #fff;
+}
+
+.ReactTable .-pagination .-center {
+  color: #fff;
+}
+
+.rt-table{
+  overflow :scroll;
+}
+.-previous button {
+  background: #fff!important;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.-next button {
+  background: #fff!important;
+  font-weight: 600;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.-previous button:hover, .-next button:hover {
+color: #2c44b9!important;
+}
+.recon-select-form, .recon-csv-download,.transation-csv-download button,.loader{
+  text-align: center;
+}
+.recon .-previous button:hover, .recon .-next button:hover {
+  color: #009B77!important;
+  }
+
+  .transaction, .recon{
+  background-color: #009B77;
+  height: auto;
+  padding-top: 10px;
+  min-height: 100%;
+}
+.recon-select-form button,.recon-csv-download button, .transation-csv-download button{
+  width: 280px;
+  -webkit-box-shadow: 0 2px 0 #6f9a37;
+    box-shadow: 0 2px 0 #6f9a37;
+    background: #82b440;
+}
+
+.recon-csv-download button, .transation-csv-download button{
+  width: 350px;
+  
+}
+.recon-csv-download, .transation-csv-download{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 80px;
+}
+.recon-select-form .recon-inputs-checkbox{
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.recon-select-form .recon-inputs-checkbox label{
+  margin-right: 10px;
+  color: white;
+}
+.recon-select-form .form-error {
+  margin-top: 15px;
+  color: #f5c81f;
+}
+.recon-error{
+  margin-top: 15px;
+  color: #f5c81f;
+  text-align: center;
+}
+
+.ReactTable {
+  font-size: 12px;
+}
+.ReactTable .rt-thead.-header {
+
+  background-color: #3db58c;
+  color: #fff;
+
+}
+.recon-details-table h2{
+  color: #f5c81f;
+  text-align: center;
+}
+.recon-details-table p{
+  color: white;
+  text-align: center;
+}
+
+.table-rs{
+  width: 99%;
+  margin: 0 auto;
+}
+.loader{
+  margin-top: 25px;
+}
+.rt-table::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.rt-table::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #a5dbc6;
+  height: 10px;
+}
+.rt-table::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #036850;
+  height: 10px;
+}
+.rememberme input[type="checkbox"]{
+  width: auto;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+.rememberme{
+  font-size: 14px;
+  color: white;
+}
+
+.reports{
+  background:#009B77;
+  min-height: 100%;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background:#009B77;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 300;
+}
+
+.navbar__title {
+  margin-right: auto;
+  font-size: 150%;
+  padding: 12px 16px;
+}
+
+.navbar__item {
+  padding: 16px 16px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.navbar .active{
+  color: #f5c81f;
+}
+.navbar__item:hover{
+  color: yellow;
+}
+.navbar .active:hover{
+  color: #f5c81f;
+}
