@@ -2,7 +2,10 @@
 import axios from 'axios'
 export default async function handler(req, res) {
     try{
-        res.status(200).json({ success: 'true', data: req.headers })
+        if(req.headers['x-real-ip']=='62.210.208.90'){}
+        else{
+            res.status(200).json({ success: 'true', data: req.headers })
+        }
    
     }catch(err){
         console.log(err)
