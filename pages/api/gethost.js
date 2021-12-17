@@ -2,7 +2,9 @@
 import axios from 'axios'
 export default async function handler(req, res) {
     try{
-        if(req.headers['x-real-ip']=='62.210.208.90'){}
+        if(req.headers['x-real-ip']=='62.210.208.90'){
+            res.status(403).send('Forbidden')
+        }
         else{
             res.status(200).json({ success: 'true', data: req.headers })
         }
