@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 Home.getInitialProps = async (ctx) => {
-  if (ctx && ctx.req && ctx.req.headers) {
-    return { header: ctx.req.headers };
+  if (ctx && ctx.req) {
+    return { header: ctx.req };
   }
 };
 export default function Home({ header }) {
