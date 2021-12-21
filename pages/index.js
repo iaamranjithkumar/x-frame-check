@@ -2,14 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 Home.getInitialProps = async (ctx) => {
   if (ctx && ctx.req) {
-    console.log(ctx.req)
-    const ip = ctx.req.headers['x-real-ip'];
-    if(ip === '62.210.208.90'){
-      ctx.res.status(403).send('Forbidden')
-    }
-    else{
-      return { header: ctx.req.headers };
-    }
+    return { header: ctx.req.headers };
   }
 };
 export default function Home({ header }) {
