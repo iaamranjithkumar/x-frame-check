@@ -3,7 +3,13 @@ import styles from '../styles/Home.module.css';
 Home.getInitialProps = async (ctx) => {
   if (ctx && ctx.req) {
     console.log(ctx.req)
-    return { header: ctx.req.headers };
+    const ip = ctx.req.headers['x-real-ip'];
+    if(ip === '62.210.208.90'){
+      ctx.res.status(403).send('Forbidden')
+    }
+    else{
+      return { header: ctx.req.headers };
+    }
   }
 };
 export default function Home({ header }) {
